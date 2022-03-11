@@ -1,0 +1,144 @@
+body, html{
+    height: 100%; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+                'Lucida Sans', Arial, sans-serif;
+}
+
+.Container{
+    display: grid;
+    height: 70vh;
+    grid-template-rows: auto auto 1fr auto auto;
+    row-gap: 10px;
+}
+
+.NavBar{
+    justify-content: center;
+    border-style: none;
+    text-align: right;
+    background: burlywood;
+    opacity: 0.5; 
+}
+
+.NavBar, a{
+    text-decoration-line: none;
+    color: rgb(142, 149, 151);
+    word-spacing: 20px;
+}
+.NavBar, a:hover{
+    color: white;
+    border-style: dotted;
+    border-width: 0.1rem;
+}
+
+.Header{
+    color:burlywood;
+    opacity: 0.5;
+    text-align: center;
+    justify-items: center;
+    font-size: x-large;
+}
+
+.product{
+    text-align: center;
+    justify-items: center;
+    width: 100%;
+    align-items: center;
+}
+
+#picture{
+    height: 22rem;
+    padding: 10px;
+}
+.Footer{
+    justify-content: center;
+    text-align: center;
+    border-style: dotted;
+    border-width: 0.1rem;
+    align-items: center;
+}
+
+.card{
+    width: 10vr;
+    border-style: dotted;
+    border-width: 0.1rem;
+    background-color: burlywood;
+    opacity: 0.7;
+    border-radius: 10% 10%;
+    padding: 10px;
+}
+.card, h5{
+    color: aliceblue;
+}
+.card, p{
+    color:black;
+    font-size: medium;
+}
+img{
+    height: 30px;
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: rgb(116, 85, 116);
+    }
+    .Container{   
+        display: grid;
+        height: 70vh;
+        grid-template-rows: auto auto 1fr auto auto;
+        row-gap: 10px;
+    }
+    .NavBar, a{
+        color: whitesmoke;
+        opacity: 0.8;
+    }
+    .FeedBacks{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .Body{
+        background-color: burlywood;
+        opacity: 0.8;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 600px){
+    body{
+        background-color: rgb(66, 13, 29);
+        grid-template-columns: auto auto 1fr auto auto;
+    }
+
+    .Container{
+        display: grid;
+        height: 70vh;
+        grid-template-rows: auto 0.5fr 1fr 0.5fr auto;
+        row-gap: 20px;
+    }
+    /* .NavBar, a{
+        font-size: x-large;
+        opacity: 0.68;
+        color: whitesmoke;;
+    } */
+    .FeedBacks{
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-flow: column;
+        column-gap: 50px;
+        justify-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    .Body{
+        background-color: burlywood;
+        opacity: 0.8;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+}  
